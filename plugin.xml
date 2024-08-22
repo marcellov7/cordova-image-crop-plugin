@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
+        id="cordova-plugin-image-cropper"
+        version="1.0.0">
+    <name>Image Cropper</name>
+    <description>Cordova plugin for cropping images with visual editor</description>
+    <license>MIT</license>
+    <keywords>cordova,image,crop,aspect ratio,editor</keywords>
+    <js-module src="www/imageCropper.js" name="ImageCropper">
+        <clobbers target="cordova.plugins.imageCropper" />
+    </js-module>
+    <platform name="android">
+        <config-file target="res/xml/config.xml" parent="/*">
+            <feature name="ImageCropper">
+                <param name="android-package" value="com.example.imagecropper.ImageCropper"/>
+            </feature>
+        </config-file>
+        <source-file src="src/android/ImageCropper.java" target-dir="src/com/example/imagecropper" />
+        <framework src="com.github.yalantis:ucrop:2.2.6" />
+    </platform>
+    <platform name="ios">
+        <config-file target="config.xml" parent="/*">
+            <feature name="ImageCropper">
+                <param name="ios-package" value="ImageCropper"/>
+            </feature>
+        </config-file>
+        <source-file src="src/ios/ImageCropper.swift" />
+        <podspec>
+            <config>
+                <source url="https://cdn.cocoapods.org/"/>
+            </config>
+            <pods use-frameworks="true">
+                <pod name="CropViewController" spec="~> 2.6.1" />
+            </pods>
+        </podspec>
+    </platform>
+</plugin>
