@@ -12,11 +12,12 @@
     "keywords": [
       "ecosystem:cordova",
       "cordova",
-      "scrollbar",
-      "cordova-ios",
-      "cordova-android",
+      "crop",
+      "crop-ios",
+      "crop-android",
       "android",
-      "scrollbar",
+      "crop",
+      "image",
       "ios"
     ],
     "author": "marcellov7",
