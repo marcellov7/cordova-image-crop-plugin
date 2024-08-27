@@ -1,0 +1,28 @@
+{
+    "name": "cordova-image-crop-plugin",
+    "version": "1.0.0",
+    "description": "A Cordova plugin that provides image cropping functionality with a visual editor for both Android and iOS platforms. This plugin allows users to crop images from local storage or URLs with a specified aspect ratio.",
+    "scripts": {
+      "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+      "type": "git",
+      "url": "git+https://github.com/marcellov7/cordova-image-crop-plugin.git"
+    },
+    "keywords": [
+      "ecosystem:cordova",
+      "cordova",
+      "scrollbar",
+      "cordova-ios",
+      "cordova-android",
+      "android",
+      "scrollbar",
+      "ios"
+    ],
+    "author": "marcellov7",
+    "license": "Apache-2.0",
+    "bugs": {
+      "url": "https://github.com/marcellov7/cordova-image-crop-plugin/issues"
+    },
+    "homepage": "https://github.com/marcellov7/ccordova-image-crop-plugin#readme"
+  }
